@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+  line-height: 1.5;
+}
+.whychoose li::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: rgb(6, 185, 240);
+  display: inline-block; /* Ensures the pseudo-element appears inline */
+  border-radius: 50%; /* This makes it a circle */
+  margin-right: 8px; /* Optional: Adds space between the circle and the list item text */
+}
